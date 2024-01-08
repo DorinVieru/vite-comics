@@ -19,6 +19,7 @@ export default {
 <template lang="">
   <div>
     <AppHeader />
+    <AppMain />
   </div>
 </template>
 
