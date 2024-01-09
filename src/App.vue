@@ -20,6 +20,7 @@ export default {
   <div>
     <AppHeader />
     <AppMain />
+    <AppFooter />
   </div>
 </template>
 

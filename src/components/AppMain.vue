@@ -13,9 +13,13 @@ export default {
 <!-- SEZIONE HTML -->
 <template lang="">
   <main class="d-flex align-items-center">
-      <div>
-      <h2 > --> Content goes here <-- </h2>
-    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 > --> Content goes here <-- </h1>
+            </div>
+        </div>
+    </div>  
   </main>
 </template>
 
@@ -28,8 +32,7 @@ export default {
         height: 150px;
     }
 
-    h2{
+    h1{
         color: $title_main_color;
-        padding: 20px 30px;
     }
 </style>

@@ -93,23 +93,38 @@ export default {
 
     header{
         height: 100px;
+        margin: 10px 0;
+    }
+
+    .brand{
+        vertical-align: middle;
     }
 
     ul{
         display: flex;
         justify-content: center;
 
-        li a{
+        a{
             text-decoration: none;
             padding: 0 10px;
             font-weight: 600;
             color: black;
+            position: relative;
 
             &.active,
             &.hover{
                 color: $primary_color;
                 font-weight: 700;
-                border-bottom: 3px solid $primary_color;
+             
+                &:after{
+                    content: '';
+                    position: absolute;
+                    bottom: -30px;
+                    left: 10px;
+                    width: calc(100% - 20px);
+                    height: 5px;
+                    background-color: $primary_color;
+                }
             }
         }
 
