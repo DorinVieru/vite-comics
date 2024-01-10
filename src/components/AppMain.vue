@@ -1,11 +1,13 @@
 <!-- SEZIONE JS SCRIPT -->
 <script>
 import AppCard from '../components/AppCard.vue'
+import AppJumbo from '../components/AppJumbo.vue'
 
 export default {
     name: "AppMain",
     components:{
         AppCard,
+        AppJumbo,
     },
     data() {
         return {
@@ -91,6 +93,11 @@ export default {
 <!-- SEZIONE HTML -->
 <template lang="">
 
+<!-- SECTION JUMBOTRON -->
+<section>
+    <AppJumbo></AppJumbo>
+</section>
+
 <!-- MAIN -->
   <main class="d-flex align-items-center">
     <div class="container">
@@ -161,6 +168,7 @@ export default {
 
     main{
         background-color: $bg-main-color;
+        padding-top: 30px;
     }
 
     h1{
